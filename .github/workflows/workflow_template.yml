@@ -20,8 +20,9 @@ jobs:
         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install dependencies
       run: |
+        pstree $$
+        conda init zsh
         conda create -n myenv python=3.10
-        conda init $0
         conda activate myenv
         conda install tensorflow
         conda install keras
