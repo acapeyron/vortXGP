@@ -21,6 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         conda create -n myenv python=3.10
+        conda init myenv
         conda activate myenv
         conda install tensorflow
         conda install keras
