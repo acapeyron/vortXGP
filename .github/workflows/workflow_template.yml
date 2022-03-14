@@ -35,4 +35,4 @@ jobs:
       run: |
         conda install pytest
         #Syntax exemple
-        #pytest Testing/test_file.py
+        pytest Testing/test_file.py
