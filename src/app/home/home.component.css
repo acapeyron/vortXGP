@@ -1,0 +1,119 @@
+#background{
+    margin: -8px;
+}
+
+#video{
+    height: 100%;
+    width: 100%;
+}
+
+#content{
+    position: absolute;
+    text-align: center;
+    top: 28vh;
+    left: 50vh;
+    user-select: none;
+}
+
+#content img {
+    width: 60vw;
+}
+
+#sub{
+    position: relative;
+    left: -5vh;
+    margin-top: 5vh;
+}
+
+#sub div {
+    margin-top: 5vh;
+    color:white;
+    font-size: 3vh;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family:'monaco','Consolas','Lucida Console',monospace;
+}
+
+/*  */
+    
+a {
+  border-radius: 10px;
+  border: 3px outset white;
+  position: relative;
+  display: inline-block;
+  padding: 5px 20px;
+  color: #eee;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  overflow: hidden;
+  
+  box-shadow: 0 0 10px rgb(0, 0, 0, 1);
+  font-family:'monaco','Consolas','Lucida Console',monospace;
+  font-size: 18px;
+  font-weight: bolder;
+  text-decoration: none;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+  transition: 0.2s;
+
+}
+a:active {
+  border: 3px outset #ddd;
+  background-color: white;
+  color: #fff;
+  text-shadow: 0px 0px 4px black;
+  box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+  transition-delay: 1s;
+}
+
+a span {
+  position: absolute;
+  display: block;
+}
+
+a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #eee);
+}
+a:active span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #eee);
+}
+a:active span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #eee);
+}
+a:active span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #eee);
+}
+a:active span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}

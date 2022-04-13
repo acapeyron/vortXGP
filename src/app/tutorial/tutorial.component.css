@@ -1,0 +1,150 @@
+.canvas{
+    visibility: hidden;
+}
+
+.canvas-deployed{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+}
+
+button{
+    height:fit-content;
+    width: fit-content;
+    font-size: 2vh;
+}
+
+.tuto_container{
+    display: flex;
+    position: absolute;
+}
+
+#presets_tuto{
+    top: 3vh;
+    left: 18vw;
+    height: 95vh;
+}
+
+#presets_outline{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 64vw;
+    border: 1px solid rgb(0,0,0,0.8);
+    border-radius: 1.5vh;
+    box-shadow: 0 0 0 100vmax rgba(12, 12, 12, 0.8);
+    z-index: 15;
+}
+
+.glow{
+    position:absolute;
+    border: 1px solid rgb(0,0,0,0.8);
+    box-shadow: 0 0 10px white;
+    border-radius: 1.5vh;
+    z-index: 15;
+    transition: width 1s, height 1s, top 1s, left 1s;
+}
+
+.focus1{
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5vh;
+}
+
+.focus2{
+    top: 9vh;
+    left: 1vw;
+    width: 61.7vw;
+    height: 13vh;
+}
+
+.focus3{
+    top: 9vh;
+    left: 1vw;
+    width: 61.7vw;
+    height: 78vh;
+}
+
+.focus4{
+    top: 18.3vh;
+    left: 1vw;
+    width: 56vw;
+    height: 69vh;
+}
+
+.focus5{
+    top: 18.5vh;
+    left: 54.7vw;
+    width: 7.5vw;
+    height: 68.5vh;
+}
+
+.focus6{
+    top: 87vh;
+    left: 23.7vw;
+    width: 16.5vw;
+    height: 8vh
+}
+
+.presets_txt{
+    text-align: justify;
+    border: 0.2vh solid white;
+    border-radius: 1vh;
+    margin-bottom: 1vh;
+    font-size: 2vh;
+    height: fit-content;
+    padding: 1vh;
+}
+
+.presets_interact{
+    top: 0;
+    right: 0;
+    width: 16vw;
+    height: fit-content;
+    border-radius: 1vh;
+    border: 1px solid white;
+    box-shadow: 0 0 10px white;
+    background-color: rgba(12, 12, 12, 0.8);
+    color:white;
+    padding: 2vh;
+    margin-left: 1vw;
+    z-index: 15;
+    position: relative;
+    transition: top 0.75s;
+}
+
+.interact2{
+    top: 9vh;
+}
+
+.interact3{
+    top: 9vh;
+}
+
+.interact4{
+    top: 18.3vh;
+}
+
+.interact5{
+    top: 18.3vh;
+}
+
+.interact6{
+    top: 80vh;
+}
+
+.tuto_number{
+    padding: 0 1vh;
+    margin-left: 2vh;
+    margin-top: 1.5vh;
+}
+
+.btn{
+    margin-right: 1vh;
+    margin-top: 1vh;
+}

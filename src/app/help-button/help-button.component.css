@@ -1,0 +1,55 @@
+button{
+    z-index: 10;
+    border: none;
+    margin: 5px;
+}
+
+.hidden{
+    display: none;
+}
+
+.help {
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: auto;
+    background: transparent;
+    margin: 2vh;
+}
+
+#svg{
+    height: 7vh;
+    width: 7vh;
+}
+
+#svg:hover{
+    transition: 0.5s;
+    width: 10vh;
+    height: 10vh;
+}
+
+.modal-footer{
+    justify-content: center;
+}
+
+.round{
+    border: none;
+    width: 1px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.round:hover{
+    background-color: darkgray;
+}
+
+.round:focus{
+    background-color: darkgray;
+}
+
+/* 
+#close{
+    width: 1vw;
+    height : 2vh;
+} */

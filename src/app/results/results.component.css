@@ -1,0 +1,99 @@
+#background{
+    background-color: rgb(32,35,37); 
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+}
+
+#content{
+    padding-top: 15vh;
+    display: flex;
+}
+
+.col{
+    /* background-color: blue; */
+    width:50%;
+}
+
+.centered{
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+#trapeze{
+    position: absolute;
+    left: 12.5vw;
+    top: 19vh;
+    width: 9.8vw;
+    height: 44vh;
+    border: 2px solid red;
+    transform: skew(0, 15deg);
+}
+
+.img-container{
+    width: 35vw;
+    height: 58vh;
+    border: 0.3vh solid white;
+}
+
+.vortices{
+    border: 0.3vh solid red;
+}
+
+.img{
+    margin-top:-0.06vh;
+    margin-left:-0.04vw;
+    width: 100.2%;
+    height: 100.1%;
+}
+
+.slide{
+    width: fit-content;
+    height: 8vh;
+    margin-top: 2vh;
+}
+
+.slider {
+    margin-top: 4vh;
+    width: 15vw; /* Full-width */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 1vh;
+}
+  
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 3.5vh; /* Set a specific slider handle width */
+    height: 3.5vh; /* Slider handle height */
+    border-radius: 50%;
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.text{
+    color: white;
+    text-align: center;
+    font-size: 2vh;
+}
+
+#download-container{
+    margin-top: 2vh;
+    text-align: center;
+    /* background-color: green; */
+}
+
+#x-frame-bypass{
+    position: absolute;
+    top:0;
+    color: white
+}

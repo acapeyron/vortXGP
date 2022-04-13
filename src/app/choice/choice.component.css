@@ -1,0 +1,58 @@
+#background{
+    background-color: rgb(32,35,37); 
+    width:100vw;
+    height:100vh;
+    color: white;
+    display: flex;
+    user-select: none;
+}
+
+.choice{
+    width:50%;
+    height:100%;
+    border-right: 0.5vh solid white;
+    text-align: center;
+}
+
+.choice:hover{
+    transition: 0.5s;
+    background-color: white;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    filter: blur(2vh);
+}
+
+.image:hover{
+    transition: 0.5s;
+    filter: blur(1vh);
+}
+
+#image1{
+    background-image: url('../../assets/images/ez.jpg');
+    background-position: center center;
+}   
+
+
+#image2{
+    background-image: url('../../assets/images/coding.webp');
+} 
+
+span{
+    position: absolute;
+    color:white;
+    font-size: 2.5vh;
+}
+
+#presets > span {
+    top: 45vh;
+    left: 22vw;
+}
+
+#advanced > span {
+    top: 45vh;
+    left: 72vw;
+}

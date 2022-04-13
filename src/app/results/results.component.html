@@ -1,0 +1,29 @@
+<div id="background">
+    <div id="content">
+        <div class="col">
+            <div id="trapeze"></div>
+            <div class="img-container centered">
+                <img class="img" src="../../assets/images/turbine.gif">
+            </div>
+            <div class="slide centered">
+                <ngx-slider [(value)]="slide1_value" [options]="options1" class="slider"></ngx-slider>
+            </div>
+            <div class="text">t = {{ slide1_value }} s</div>
+        </div>
+        <div class="col">
+            <div class="img-container vortices centered">
+                <img class="img"  src="../../assets/images/vortices.jpeg">
+            </div>
+            <div class="slide centered">
+                <ngx-slider id="slide2" class="slider" [(value)]="slide2_value" [options]="options2" (userChange)="sliderEvent()"></ngx-slider>
+            </div>
+            <div class="text">x = {{ slide2_value }}</div>
+            
+        </div>
+    </div>
+    <div id="download-container">
+        <button id="download" class="btn btn-light">Download results</button>
+    </div>
+    
+</div>
+

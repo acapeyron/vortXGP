@@ -1,0 +1,26 @@
+<app-tutorial></app-tutorial>
+<div id="background">
+    <div id="title">
+        Choose your preset
+    </div>
+    <!-- <div [ngClass]="deployed ? 'content content-deployed' : 'content'"> -->
+    <div class="content centered">
+        <div id="list">
+            <div *ngFor="let preset of presetDic | keyvalue">
+                <button (click)="deployVideo(preset.key)">
+                    {{ preset.key }}
+                </button>
+                <div [ngClass]="deployed == preset.key? 'video-deployed' : 'video'">
+                    <video autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted=true" [src]="video" type="video/mp4">
+                    </video>
+                    <div style="color: red">
+                        aaa
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="deployed != ''" id="confirm" class="centered">
+        <a routerLink="/results/{{route}}" class="btn btn-light">Show results for simulation {{route}}</a>
+    </div>
+</div>

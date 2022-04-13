@@ -1,0 +1,100 @@
+#background{
+    background-color: rgb(32,35,37); 
+    width:100vw;
+    height:100vh;
+    user-select: none;
+}
+
+#title{
+    padding-top: 3vh;
+    color:white;
+    font-size: 5vh;
+    text-align: center;
+}
+
+.content{
+    margin-top: 3vh;
+    transition: 0.75s;
+    font-size: 2vh;
+}
+
+#list{
+    display: grid;
+    height: 75vh;
+    /* width: 43vw; */
+    width: 60vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#list > div > button{
+    position: relative;
+    height: 10vh;
+    width: 100%;
+    border: 0.3vh solid white;
+    border-radius: 1vh;
+    background-color: rgba(61, 65, 68, 0.5);
+    color: white;
+}
+
+#list > div > button:hover{
+    /* background-color: lightgray; */
+}
+
+.video{
+    display: flex;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    transition: height 0.75s;
+}
+
+.video-deployed{
+    width: 59.55vw;
+    height: 65vh;
+    display: flex;
+    background-color: white;
+    border: 0.5vh solid lightgray;
+    border-radius: 1vh;
+    transition: height 0.75s, opacity 0.75s;
+}
+
+video{
+    border-right: 1vh solid lightgray;
+}
+
+.video > div{
+    display: none;
+    height:0;
+    width: 0;
+}
+
+.video-deployed > div{
+    transition: height 0.75s, width 0.75s;
+}
+
+#confirm{
+    color:white;
+    padding-top: 3vh;
+}
+
+.centered{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw !important;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #acacac;
+  border-radius: 0.6vh;
+}

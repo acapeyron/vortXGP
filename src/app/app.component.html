@@ -1,0 +1,6 @@
+<app-back-button></app-back-button>
+<app-help-button></app-help-button>
+
+<div [@routerAnimations]="prepareRouteTransition(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+</div>
