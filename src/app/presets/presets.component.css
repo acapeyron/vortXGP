@@ -3,79 +3,123 @@
     width:100vw;
     height:100vh;
     user-select: none;
+    display: flex;
 }
 
-#title{
-    padding-top: 3vh;
-    color:white;
-    font-size: 5vh;
-    text-align: center;
+#sidebar{
+    width: 25vw;
+    height: 100vh;
+    background-color: rgb(53, 48, 48);
 }
 
 .content{
+    width: 100%;
+}
+
+.content-title{
+    padding-top: 3vh;
+    height: 15vh;
+    color:white;
+    font-family: 'Google';
+    font-size: 5vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2vh;
+    width: fit-content;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    height: fit-content;
+}
+
+.content-list{
+    margin-top: 5vh;
+    width: 100%;
+    height: 83.5%;
+    display: grid;
+    font-family: 'Fredoka One', cursive;
+    overflow: auto;
+}
+
+.sidebar-title{
+    padding-top: 2vh;
+    color:white;
+    font-family: 'Google';
+    font-size: 3.5vh;
+    text-align: center;
+    float: right;
+    width: 100%;
+    /* background-color: rgb(36, 36, 92); */
+    background-color: rgb(41, 122, 123);
+    border: 0.2vh solid white;
+    height: 10vh;
+    /* text-shadow: 0.2vh 0.2vh black; */
+    /* border-radius: 0.5vh; */
+}
+
+.filter-list{
+    margin-top: 9.5vh;
+    color: white;
+    height: fit-content;
+}
+
+.filter-title{
+    background-color: grey;
+    font-family: 'Google';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.2vh solid white;
+    font-size: 2.2vh;
+    /* border-radius: 0.5vh; */
+    padding: 0.5vh;
+    /* text-shadow: 0.2vh 0.2vh black; */
+}
+
+.filter{
+    font-family: 'Google';
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(36, 74, 92); */
+    border: 0.2vh solid white;
+    font-size: 2.2vh;
+    /* text-shadow: 0.2vh 0.2vh black; */
+    /* border-radius: 0.5vh; */
+}
+
+.filter > span {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+
+.list-items{
+    color: white;
+    width: 72vw;
+    height: 22vh;
+    background-color: rgb(41, 122, 123);
+    border: 0.3vh solid white;
+    border-radius: 1vh;
+    padding: 2vh;
+    margin-bottom: 5vh;
+    margin-left: 8vh;
+    font-size: 2.2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.5s, width 0.5s;
+    text-shadow: 0.2vh 0.2vh black;
+}
+
+.list{
     margin-top: 3vh;
     transition: 0.75s;
     font-size: 2vh;
-}
-
-#list{
-    display: grid;
-    height: 75vh;
-    /* width: 43vw; */
-    width: 60vw;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-#list > div > button{
-    position: relative;
-    height: 10vh;
-    width: 100%;
-    border: 0.3vh solid white;
-    border-radius: 1vh;
-    background-color: rgba(61, 65, 68, 0.5);
-    color: white;
-}
-
-#list > div > button:hover{
-    /* background-color: lightgray; */
-}
-
-.video{
-    display: flex;
-    opacity: 0;
-    height: 0;
-    width: 0;
-    transition: height 0.75s;
-}
-
-.video-deployed{
-    width: 59.55vw;
-    height: 65vh;
-    display: flex;
-    background-color: white;
-    border: 0.5vh solid lightgray;
-    border-radius: 1vh;
-    transition: height 0.75s, opacity 0.75s;
-}
-
-video{
-    border-right: 1vh solid lightgray;
-}
-
-.video > div{
-    display: none;
-    height:0;
-    width: 0;
-}
-
-.video-deployed > div{
-    transition: height 0.75s, width 0.75s;
-}
-
-#confirm{
-    color:white;
-    padding-top: 3vh;
 }
 
 .centered{
@@ -84,6 +128,72 @@ video{
     justify-content: center;
 }
 
+.checkbox{
+    height: 3vh;
+    width: 1.7vw
+}
+
+.deployed{
+    height: 77vh;
+    transition: height 0.1s;
+}
+
+.video-container{
+    height:100%;
+    /* position: relative; */
+    /* top: -2.1vh; */
+    /* left: -9.9vw; */
+    margin-top: -4.2vh;
+    margin-left: 0;
+    display: flex;
+}
+
+.video{
+    height:106%;
+    margin-top:0;
+    border-radius: 1vh 0 0 1vh;
+}
+
+.barre{
+    background-color: grey;
+    width: 0.5vw;
+    height: 105.5%
+}
+
+.video-desc{
+    width: 23.3vw;
+    text-align: justify;
+    padding: 2vh;
+    text-shadow: none;
+}
+
+/* .undeployed{
+    display: none;
+} */
+
+.confirm{
+    /* margin-top: 7vh; */
+    width: 100%;
+    height: 12.7vh;
+    font-family: 'Google'
+}
+
+.custom-btn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disabled{
+    pointer-events: none;
+}
+
+.disabled > a {
+    background-color: grey;
+    border: grey;
+}
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: none !important;
   background-color: transparent !important;

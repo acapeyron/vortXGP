@@ -22,7 +22,7 @@
 #sub{
     position: relative;
     left: -5vh;
-    margin-top: 5vh;
+    margin-top: 8vh;
 }
 
 #sub div {
@@ -30,25 +30,27 @@
     color:white;
     font-size: 3vh;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    font-family:'monaco','Consolas','Lucida Console',monospace;
+    /* font-family: 'ABeeZee', sans-serif; */
+  /* font-family: 'Fredoka One', cursive; */
+    font-family: 'Google';
 }
 
-/*  */
+/* button style */
     
 a {
-  border-radius: 10px;
-  border: 3px outset white;
+  border-radius: 1.5vh;
+  border: 0.5vh outset white;
   position: relative;
   display: inline-block;
-  padding: 5px 20px;
+  padding: 1vh 3vh;
   color: #eee;
   /* text-transform: uppercase; */
   letter-spacing: 2px;
   overflow: hidden;
   
-  box-shadow: 0 0 10px rgb(0, 0, 0, 1);
-  font-family:'monaco','Consolas','Lucida Console',monospace;
-  font-size: 18px;
+  box-shadow: 0 0 1.2vh rgb(0, 0, 0, 1);
+  font-family: 'SpaceX';
+  font-size: 2vh;
   font-weight: bolder;
   text-decoration: none;
   text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
@@ -61,7 +63,6 @@ a:active {
   color: #fff;
   text-shadow: 0px 0px 4px black;
   box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
-  transition-delay: 1s;
 }
 
 a span {

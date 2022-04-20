@@ -10,6 +10,14 @@ button{
     height: auto;
     background: transparent;
     margin: 2vh;
+    left:0;
+    transition: left 0.5s, transform 0.5s;
+}
+
+.arrow-presets{
+    left: 20vw;
+    transition: left 0.5s, transform 0.5s;
+    transform: rotate(90deg);
 }
 
 #svg{

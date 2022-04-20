@@ -22,17 +22,31 @@ button{
     position: absolute;
 }
 
-#presets_tuto{
-    top: 3vh;
-    left: 18vw;
-    height: 95vh;
+.presets_tuto1{
+    top: 2vh;
+    left: 1vw;
+    height: 97vh;
+}
+
+/* .presets_tuto2{
+    top: 0vh;
+    left: -13vw;
+    height: 100vh;
+    width: 32.2vw
+} */
+
+.presets_tuto2{
+    top: 0vh;
+    left: -19vw;
+    height: 100vh;
+    width: 38.2vw
 }
 
 #presets_outline{
     position: relative;
     top: 0;
-    left: 0;
-    width: 64vw;
+    left: 3vw;
+    width: 78vw;
     border: 1px solid rgb(0,0,0,0.8);
     border-radius: 1.5vh;
     box-shadow: 0 0 0 100vmax rgba(12, 12, 12, 0.8);
@@ -57,38 +71,45 @@ button{
 }
 
 .focus2{
-    top: 9vh;
-    left: 1vw;
-    width: 61.7vw;
-    height: 13vh;
+    top: 16vh;
+    left: 1.7vw;
+    width: 73.8vw;
+    height: 25vh;
 }
 
 .focus3{
-    top: 9vh;
-    left: 1vw;
-    width: 61.7vw;
-    height: 78vh;
+    top: 16vh;
+    left: 1.7vw;
+    width: 74vw;
+    height: 80vh;
 }
 
 .focus4{
-    top: 18.3vh;
-    left: 1vw;
-    width: 56vw;
-    height: 69vh;
+    top: 16vh;
+    left: 1.7vw;
+    width: 50vw;
+    height: 80vh;
 }
 
 .focus5{
-    top: 18.5vh;
-    left: 54.7vw;
-    width: 7.5vw;
-    height: 68.5vh;
+    top: 16vh;
+    left: 51.7vw;
+    width: 24.2vw;
+    height: 80vh;
 }
 
 .focus6{
     top: 87vh;
-    left: 23.7vw;
-    width: 16.5vw;
-    height: 8vh
+    left: 0vw;
+    width: 20vw;
+    height: 13vh
+}
+
+.focus7{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 87%;
 }
 
 .presets_txt{
@@ -113,7 +134,7 @@ button{
     color:white;
     padding: 2vh;
     margin-left: 1vw;
-    z-index: 15;
+    z-index: 20;
     position: relative;
     transition: top 0.75s;
 }
@@ -136,6 +157,12 @@ button{
 
 .interact6{
     top: 80vh;
+    left: 40vw;
+}
+
+.interact7{
+    top: 2vh;
+    left: 40vw;
 }
 
 .tuto_number{

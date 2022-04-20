@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "SpaceX";
+    src: url(./assets/fonts/xspace-7626306/XspaceRegular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Google";
+    src: url(./assets/fonts/product-sans/Product_Sans_Regular.ttf) format("truetype");
+}

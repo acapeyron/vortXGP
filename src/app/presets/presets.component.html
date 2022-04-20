@@ -1,26 +1,53 @@
 <app-tutorial></app-tutorial>
 <div id="background">
-    <div id="title">
-        Choose your preset
-    </div>
-    <!-- <div [ngClass]="deployed ? 'content content-deployed' : 'content'"> -->
-    <div class="content centered">
-        <div id="list">
-            <div *ngFor="let preset of presetDic | keyvalue">
-                <button (click)="deployVideo(preset.key)">
-                    {{ preset.key }}
-                </button>
-                <div [ngClass]="deployed == preset.key? 'video-deployed' : 'video'">
-                    <video autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted=true" [src]="video" type="video/mp4">
-                    </video>
-                    <div style="color: red">
-                        aaa
-                    </div>
+    <div id="sidebar">
+        <div class="sidebar-title">
+            Filters
+        </div>
+        <div class="filter-list">
+            <ng-container *ngFor="let filter of filter_list | keyvalue">
+                <div class="filter-title" *ngIf="filter.key == 'ASteady'">
+                    Steadiness
                 </div>
+                <div class="filter-title" *ngIf="filter.key  == 'CLight'">
+                    Mesh complexity
+                </div>
+                <div class="filter-title" *ngIf="filter.key == 'F20 rpm'">
+                    Rotations per minute
+                </div>
+                <div class="filter">
+                    <span>{{filter.key.substring(1)}}</span>
+                    <input type="checkbox" [(ngModel)]="filter_list[filter.key]" class="checkbox">
+                </div>
+            </ng-container>
+            <div class="confirm" [ngClass]="deployed != '' ? '' :'disabled'">
+                <a *ngIf="route != '?'" routerLink="/results/{{route}}" class="btn btn-light custom-btn">Show results for simulation {{route}}</a>
+                <a *ngIf="route == '?'"class="btn btn-light custom-btn">No simulation selected</a>
             </div>
         </div>
     </div>
-    <div *ngIf="deployed != ''" id="confirm" class="centered">
-        <a routerLink="/results/{{route}}" class="btn btn-light">Show results for simulation {{route}}</a>
+
+    <div class="content">
+        <div class="content-title">
+            {{title}}
+        </div>
+        <div class="content-list">
+            <ng-container *ngFor="let preset of preset_dic | keyvalue ">
+                <button #el class="list-items btn" (click)="deploy(preset.key, el)" *ngIf="filter(preset)"
+                [ngClass]="deployed == preset.key  ? 'deployed' : (deployed != '' ? 'undeployed' : '')">
+                        <div *ngIf="deployed != preset.key">{{preset.value[0].name}}</div> 
+                        <div class="video-container" *ngIf="deployed == preset.key">
+                            <video class="video" [src]="preset.value[0].video" autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted=true">
+
+                            </video>
+                            <div class="barre"></div>
+                            <div class="video-desc">
+                                {{preset.value[0].desc}}
+                            </div>
+                        </div>
+                </button>
+            </ng-container>
+        </div>
     </div>
+    
 </div>

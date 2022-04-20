@@ -37,7 +37,7 @@ export class ResultsComponent implements OnInit {
     };
     this.options2 = {
       floor: 0,
-      ceil: 10,
+      ceil: 2,
       step: 1
     };
 
@@ -46,7 +46,6 @@ export class ResultsComponent implements OnInit {
     // starting position (in vw) of the relevant part of the turbine img
     this.turbine_offset = 12.5;
     this.turbine_steps = this.initSlide();
-
   }
   
   ngOnInit(): void {

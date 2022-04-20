@@ -6,8 +6,25 @@
 }
 
 #content{
-    padding-top: 15vh;
+    padding-top: 5.2vh;
     display: flex;
+}
+.title-container{
+    padding-top: 3vh;
+}
+
+.title{
+    background-color: rgba(255, 255, 255, 0.2);
+    /* text-shadow: 0.5vh 0.5vh black; */
+    border-radius: 2vh;
+    padding-top: 5vh;
+    color:white;
+    font-size: 5vh;
+    font-family: 'Google';
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 2vh;
 }
 
 .col{
@@ -23,7 +40,7 @@
 #trapeze{
     position: absolute;
     left: 12.5vw;
-    top: 19vh;
+    top: 24vh;
     width: 9.8vw;
     height: 44vh;
     border: 2px solid red;
@@ -87,9 +104,10 @@
 }
 
 #download-container{
-    margin-top: 2vh;
+    margin-top: 1vh;
     text-align: center;
     /* background-color: green; */
+    font-family: 'Google';
 }
 
 #x-frame-bypass{

@@ -1,8 +1,5 @@
 <div [ngClass]="deployed == true ? 'canvas-deployed' : 'canvas'">
-    <div id="presets_tuto" class="tuto_container">
-        <div id="presets_outline">
-            <div class="glow" [ngClass]="'focus'+focus"></div>
-        </div>
+    <div class="tuto_container" [ngClass]="focus>='6'? 'presets_tuto2' : 'presets_tuto1'">
         <div class="presets_interact" [ngClass]="'interact'+focus">
             <ng-container *ngFor="let item of tuto_list | keyvalue">
                 <div *ngIf="focus == item.key">
@@ -10,14 +7,18 @@
                         {{item.value}}
                     </div>
                     <div style="display: flex">
-                        <button class="btn btn-light" (click)="moveFocus(focus)" *ngIf="item.key != '6'">Continue</button>
+                        <button class="btn btn-light" (click)="moveFocus(focus)" *ngIf="item.key != '7'">Continue</button>
                         <button class="btn btn-light" (click)="exit()">Exit</button>
-                        <div class="tuto_number">{{item.key}}/6</div>
+                        <div class="tuto_number">{{item.key}}/7</div>
                     </div>
                     
                 </div>
             </ng-container>
         </div>
+        <div id="presets_outline">
+            <div class="glow" [ngClass]="'focus'+focus"></div>
+        </div>
+        
         <button id="reset" style="visibility: hidden;" (click)="resetView()"></button>
         <button id="show" style="visibility: hidden;" (click)="deploy()"></button>
     </div>

@@ -27,7 +27,8 @@ export class TutorialComponent implements OnInit {
       "3": "Zebi",
       "4": "The fly",
       "5": "Which flies",
-      "6": "Download",
+      "6": "Go to results page",
+      "7": "Filters"
     }
   }
 
@@ -35,7 +36,7 @@ export class TutorialComponent implements OnInit {
   }
 
   public showTutorial(){
-    // only way I found to efficiently rest the view
+    // only way I found to efficiently reset the view
     document.getElementById('reset')?.click()
     document.getElementById('show')?.click()
   }
@@ -50,13 +51,17 @@ export class TutorialComponent implements OnInit {
   public moveFocus(current_focus: string){
     if (current_focus == '1' ) this.focus = "2"
     else if (current_focus == '2'){
-      this.presets.deployVideo(0);
-      this.presets.deployed = '0';
+      // this.presets.deployVideo(0);
+      this.presets.deployed = 'A0';
       this.focus = "3";
     }
     else if (current_focus == '3') this.focus = "4"
     else if (current_focus == '4') this.focus = "5"
-    else if (current_focus == '5') this.focus = "6"
+    else if (current_focus == '5') {
+      this.focus = "6";
+      this.presets.deployed = '';
+    }
+    else if (current_focus == '6') this.focus = "7"
   }
 
   // exits tutorial

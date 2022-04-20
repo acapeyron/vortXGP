@@ -27,7 +27,7 @@ import { TutorialComponent } from './tutorial/tutorial.component';
     PresetsComponent,
     HelpButtonComponent,
     ResultsComponent,
-    TutorialComponent
+    TutorialComponent,
   ],
   imports: [
     BrowserAnimationsModule,
