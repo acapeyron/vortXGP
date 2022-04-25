@@ -87,14 +87,14 @@ button{
 .focus4{
     top: 16vh;
     left: 1.7vw;
-    width: 50vw;
+    width: 38vw;
     height: 80vh;
 }
 
 .focus5{
     top: 16vh;
-    left: 51.7vw;
-    width: 24.2vw;
+    left: 38.2vw;
+    width: 37vw;
     height: 80vh;
 }
 
@@ -156,13 +156,14 @@ button{
 }
 
 .interact6{
-    top: 80vh;
+    top: 72vh;
     left: 40vw;
 }
 
 .interact7{
     top: 2vh;
     left: 40vw;
+    width: 50vw;
 }
 
 .tuto_number{

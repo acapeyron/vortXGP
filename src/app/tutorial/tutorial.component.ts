@@ -22,13 +22,13 @@ export class TutorialComponent implements OnInit {
     this.focus = "1";
     this.deployed = false;
     this.tuto_list = {
-      "1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "3": "Zebi",
-      "4": "The fly",
-      "5": "Which flies",
-      "6": "Go to results page",
-      "7": "Filters"
+      "1": "This part displays the list of different presets, each of them processed with different parameters.",
+      "2": "Each preset has a specific name based on its parameters and can be clicked to be deployed.",
+      "3": "Once deployed, the preset is split in two parts: a video and some text.",
+      "4": "The video is a timelapse of the 0.84s simulation",
+      "5": "The text is a detailed description of the simulation and its parameters.",
+      "6": "Once a preset is deployed, this button will light up and clicking on it gets you to the following results page.",
+      "7": "Finally, you are provided with a list of filters to target the simulation you want based on its steadiness, its mesh complexity or even the number of rotations per minute the blade performs."
     }
   }
 

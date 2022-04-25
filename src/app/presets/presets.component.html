@@ -12,7 +12,7 @@
                 <div class="filter-title" *ngIf="filter.key  == 'CLight'">
                     Mesh complexity
                 </div>
-                <div class="filter-title" *ngIf="filter.key == 'F20 rpm'">
+                <div class="filter-title" *ngIf="filter.key == 'F20_rpm'">
                     Rotations per minute
                 </div>
                 <div class="filter">
@@ -38,7 +38,6 @@
                         <div *ngIf="deployed != preset.key">{{preset.value[0].name}}</div> 
                         <div class="video-container" *ngIf="deployed == preset.key">
                             <video class="video" [src]="preset.value[0].video" autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted=true">
-
                             </video>
                             <div class="barre"></div>
                             <div class="video-desc">

@@ -3,8 +3,21 @@
         <div class="image" id="image1"></div>
         <span>Easy mode</span>
     </a>
-    <a class="choice" id="advanced">
+    <a class="choice" id="advanced" (click)="openModal(warning)">
         <div class="image" id="image2"></div>
         <span>Advanced mode</span>
     </a>
+
+    <!-- <button class="help" >
+        <img id="svg" src="../assets/images/help.png">
+    </button> -->
 </div>
+
+<ng-template #warning>
+    <!-- <div class="modal-header">
+        <h4 class="modal-title pull-left">Dead end</h4>
+    </div> -->
+    <div class="modal-body">
+            Unfortunately this part of the app is unavailable at the moment. We are working on it, sorry for the inconvenience.
+    </div>
+</ng-template>

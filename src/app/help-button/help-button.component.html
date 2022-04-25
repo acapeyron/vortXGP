@@ -14,16 +14,16 @@
         <!-- <img id="close" src ="../assets/images/close.png"> -->
     </div>
     <div [ngClass]="page == 1 ? 'modal-body' : 'hidden'">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
-            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            The VortX project is ... (vortex core detection, for that we focused on simulating a wind turbine's blade
+            rotating and processed the result through machine learning algorithms to detect the vortices cores.)
     </div>
     <div [ngClass]="page == 2 ? 'modal-body' : 'hidden'">
-        Ut eu sem integer vitae justo eget. Volutpat consequat mauris nunc congue. Velit scelerisque in dictum non consectetur 
-        a erat nam at. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Vitae nunc sed velit dignissim sodales ut. 
-        Morbi tristique senectus et netus et malesuada fames ac turpis. Tortor dignissim convallis aenean et tortor at. 
-        Fringilla phasellus faucibus scelerisque eleifend donec pretium. Risus feugiat in ante metus dictum at. 
+            There are two modes available:<br>
+            -The <b>easy mode</b> is for every user possible. 
+            No need to have experience in the vortex topic or computer engineering. The point is to allow everyone to 
+            discover how we worked and what we achieved and play around with the results.<br>
+            -The <b>advanced mode</b> is reserved for users with a background on the topic. It allows for more room on user input and 
+            customization of the user's experience.
     </div>
     <div class="modal-footer">
         <button id="btn1" class="round" (click)="pageChange(1)"></button>
@@ -37,8 +37,10 @@
         <h4 class="modal-title pull-left">Welcome to the easy mode</h4>
     </div>
     <div class="modal-body">
-        Petite desc.<br>
-        Press the "Tutorial" button if you want to follow the tutorial or skip this part.
+        For this mode we have run 12 different simulations of a wind turbine's blade rotating with different parameters. 
+        This page allows you to have a look at all these simulations and compare them. Once you are ready, you can go to the next 
+        page where the results will be displayed.<br><br>
+        Press the <b>Tutorial</b> button if you want to follow the tutorial or <b>Skip</b> this part.
     </div>
     <div class="modal-footer">
         <button id="btn1" class="btn btn-secondary" (click)="startTutorial()">Tutorial</button>

@@ -28,6 +28,10 @@ button{
     height: 10vh;
 }
 
+.modal-body{
+    text-align: justify;
+}
+
 .modal-footer{
     justify-content: center;
 }

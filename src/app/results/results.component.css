@@ -39,12 +39,26 @@
 
 #trapeze{
     position: absolute;
-    left: 12.5vw;
-    top: 24vh;
+    left: 20.2vw;
+    top: 30vh;
     width: 9.8vw;
-    height: 44vh;
+    height: 25vh;
     border: 2px solid red;
-    transform: skew(0, 15deg);
+    transform: skew(0, 18deg);
+}
+
+#load_iso{
+    position: absolute;
+    width: 5vw;
+    left: 23%;
+    top: 42%
+}
+
+#load_vortex{
+    position: absolute;
+    width: 5vw;
+    left: 73%;
+    top: 44%
 }
 
 .img-container{

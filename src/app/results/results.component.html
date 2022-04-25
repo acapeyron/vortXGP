@@ -6,21 +6,23 @@
     </div>
     <div id="content">
         <div class="col">
-            <div id="trapeze"></div>
+            <div id="trapeze" *ngIf="display_trapeze"></div>
             <div class="img-container centered">
-                <img class="img" src="../../assets/images/turbine.gif">
+                <img id="load_iso" *ngIf="loading_iso" src="../../assets/images/loading.gif">
+                <img id="iso" class="img" src="">
             </div>
             <div class="slide centered">
-                <ngx-slider [(value)]="slide1_value" [options]="options1" class="slider"></ngx-slider>
+                <ngx-slider class="slider" [(value)]="slide1_value" [options]="options1" (userChange)="switchImageIso(slide1_value, slide2_value)"></ngx-slider>
             </div>
             <div class="text">t = {{ slide1_value }} s</div>
         </div>
         <div class="col">
             <div class="img-container vortices centered">
-                <img class="img" src="../../assets/images/vortices.jpeg">
+                <img id="load_vortex" *ngIf="loading_vortex" src="../../assets/images/loading.gif">
+                <img id="vortex" class="img" src="">
             </div>
             <div class="slide centered">
-                <ngx-slider id="slide2" class="slider" [(value)]="slide2_value" [options]="options2" (userChange)="sliderEvent()"></ngx-slider>
+                <ngx-slider id="slide2" class="slider" [(value)]="slide2_value" [options]="options2" (userChange)="trapezeSlide();switchImageVortex(slide2_value)"></ngx-slider>
             </div>
             <div class="text">y = {{ slide2_value }}</div>
             
