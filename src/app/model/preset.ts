@@ -3,7 +3,7 @@ export class Preset {
     name!: string;
     parameters!: string[];
     video!: string;
-    desc!: string;
+    desc!: any;
 
     constructor(name: string, parameters: string[], video: string, desc: string) {
         this.name = name;

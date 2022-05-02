@@ -40,9 +40,7 @@
                             <video class="video" [src]="preset.value[0].video" autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted=true">
                             </video>
                             <div class="barre"></div>
-                            <div class="video-desc">
-                                {{preset.value[0].desc}}
-                            </div>
+                            <div class="video-desc" [innerHTML]="preset.value[0].desc"></div>
                         </div>
                 </button>
             </ng-container>

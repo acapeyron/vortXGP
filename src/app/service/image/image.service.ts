@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
 import { Image } from 'src/app/model/image';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -14,6 +13,8 @@ export class ImageService {
 
   constructor(private http: HttpClient) {
     this.baseUrl = 'http://localhost:9000/';
+    // this.baseUrl = 'https://back-dot-vortxgp.ew.r.appspot.com/';
+    // this.baseUrl = 'http://34.125.95.218:8080/';
   }
 
   public get(id: any): Observable<Image> {

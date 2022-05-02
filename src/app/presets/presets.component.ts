@@ -109,7 +109,7 @@ export class PresetsComponent implements OnInit {
   fillDic(): { [key: string]: [Preset, boolean] } {
     let dic: { [key: string]: [Preset, boolean] } = {};
 
-    let p0 = new Preset(this.formatParameters("0",[steady, light, rpm20]), [steady, light, rpm20], "../../assets/videos/presets/0_Steady_Light_20.mp4", "Coucou");
+    let p0 = new Preset(this.formatParameters("0",[steady, light, rpm20]), [steady, light, rpm20], "../../assets/videos/presets/0_Steady_Light_20.mp4", "Parameters: <br> - Steady<br> - Light <br> - 20 rpm <br><br>Total simulation time: 0.84s.<br> Simulation process time (using crescent): 2h20min");
     dic["A0"] = [p0, false];
     let p1 = new Preset(this.formatParameters("1",[steady, medium, rpm20]), [steady, medium, rpm20], "../../assets/videos/presets/1_Steady_Medium_20.mp4", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     dic["B1"] = [p1, false];
